@@ -113,7 +113,7 @@ def display_metrics(data):
     """Display key metrics about the filtered data."""
     total_airports = len(data)
     type_counts = data["type"].value_counts()
-    st.markdown("### ✈️ Key M1etrics")
+    st.markdown("### ✈️ Key Metrics")
     st.write(f"**Total Airports:** `{total_airports}`")
     st.write(f"**Large Airports:** `{type_counts.get('large_airport', 0)}`")
     st.write(f"**Medium Airports:** `{type_counts.get('medium_airport', 0)}`")
